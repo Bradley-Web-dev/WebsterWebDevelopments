@@ -1354,13 +1354,6 @@ p {
   color: var(--color-text-muted);
 }
 
-.contact-form {
-  padding: var(--space-7);
-  background: var(--color-panel);
-  border: 1px solid var(--color-border-soft);
-  border-radius: var(--radius-lg);
-}
-
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1442,6 +1435,38 @@ p {
 
 .form-status.is-error {
   color: #e08a8a;
+}
+
+/* Final CTA */
+.final-cta {
+  position: relative;
+  text-align: center;
+  padding-block: var(--space-12);
+  overflow: hidden;
+}
+
+.final-cta__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+.final-cta__title {
+  font-size: var(--fs-2xl);
+  margin-bottom: var(--space-4);
+}
+
+.final-cta__lead {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-7);
+}
+
+.final-cta__actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
 }
 
 /* Final CTA */
@@ -2271,7 +2296,7 @@ function initContactForm() {
   if (!form) return;
 
   // Replace this with a real inbox before publishing the site.
-  var STUDIO_EMAIL = "[BUSINESS EMAIL]";
+  var STUDIO_EMAIL = "websterwebdevelopments@gmail.com";
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
