@@ -2317,7 +2317,7 @@ function initContactForm() {
       return;
     }
 
-    var placeholderPattern = /^\[.*\]$/;
+    var placeholderPattern = /^\[$/;
     if (placeholderPattern.test(STUDIO_EMAIL)) {
       showStatus(
         "This form is a front-end demonstration. Connect it to a real inbox or form service (and replace the [BUSINESS EMAIL] placeholder inside the <script> block near the bottom of this file) before using it publicly.",
