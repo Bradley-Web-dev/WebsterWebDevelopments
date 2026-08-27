@@ -1956,7 +1956,7 @@ p {
             <a class="btn btn--ghost" href="#services">View Our Services</a>
           </div>
           <div class="hero__meta" aria-hidden="true">
-            <span class="hero__meta-item"><strong>HTML · CSS · JS</strong> handcrafted</span>
+            <span class="hero__meta-item"><strong>HTML · CSS · JS</strong></span>
             <span class="hero__meta-item"><strong>Mobile-first</strong> responsive</span>
             <span class="hero__meta-item"><strong>Built</strong> around your business</span>
           </div>
@@ -2638,7 +2638,7 @@ p {
           <div class="footer__heading">Get In Touch</div>
           <div class="footer__list">
             <a href="#contact">Contact Us</a>
-            <a href="terms.html">Terms of Service</a>
+            <a href="terms.html">Terms & Conditions</a>
             <a href="privacy.html">Privacy Policy</a>
           </div>
         </div>
@@ -2647,7 +2647,7 @@ p {
       <div class="footer__bottom">
         <p>&copy; <span data-current-year>2026</span> WebsterWebDevelopments. All rights reserved.</p>
         <div class="footer__bottom-links">
-          <a href="terms.html">Terms of Service</a>
+          <a href="terms.html">Terms & Conditions</a>
           <a href="privacy.html">Privacy Policy</a>
         </div>
       </div>
@@ -2861,15 +2861,6 @@ function initContactForm() {
 
     if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
       showStatus("Please fill in your name, email, and message before sending.", "error");
-      return;
-    }
-
-    var placeholderPattern = /^\[*\]$/;
-    if (placeholderPattern.test(STUDIO_EMAIL)) {
-      showStatus(
-        "This form is a front-end demonstration. Connect it to a real inbox or form service (and replace the [BUSINESS EMAIL] placeholder inside the <script> block near the bottom of this file) before using it publicly.",
-        "error"
-      );
       return;
     }
 

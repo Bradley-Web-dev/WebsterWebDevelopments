@@ -1956,12 +1956,7 @@ p {
       <div class="container">
         <span class="legal-hero__eyebrow">Legal</span>
         <h1 class="legal-hero__title">Privacy Policy</h1>
-        <p class="legal-hero__updated">Last updated: [DATE]</p>
-
-        <div class="legal-disclaimer">
-          <span aria-hidden="true">⚠</span>
-          <span><strong>This is a template, not legal advice.</strong> This Privacy Policy is a starting point and has not been reviewed by an attorney. Have it reviewed for compliance with the privacy laws that apply to your business and location — including <span class="placeholder">[JURISDICTION]</span> — before publishing it, and complete the <span class="placeholder">[BUSINESS EMAIL]</span> and <span class="placeholder">[BUSINESS ADDRESS]</span> placeholders below.</span>
-        </div>
+        <p class="legal-hero__updated">Last updated: 27 Aug 2026</p>
       </div>
     </section>
 
@@ -1993,7 +1988,7 @@ p {
 
         <section id="information-we-collect">
           <h2><span class="legal-num">02</span> Information We Collect</h2>
-          <p>This is a static website, and this particular site does not automatically collect visitor data on its own. Information may be collected only when it is voluntarily submitted, such as through the contact form, or through third-party services that WebsterWebDevelopments may add later. Any such service will be identified with a placeholder here rather than assumed.</p>
+          <p>This is a static website, and this particular site does not automatically collect visitor data on its own. Information may be collected only when it is voluntarily submitted, such as through the contact form.</p>
         </section>
 
         <section id="information-you-provide">
@@ -2008,17 +2003,17 @@ p {
 
         <section id="cookies">
           <h2><span class="legal-num">05</span> Cookies</h2>
-          <p>This website, as built, does not set its own tracking cookies. If cookies are introduced later (for example, through an analytics or hosting service), this section should be updated to describe what is used and why: <span class="placeholder">[COOKIE DETAILS]</span>.</p>
+          <p>This website does not set its own tracking cookies.</p>
         </section>
 
         <section id="analytics">
           <h2><span class="legal-num">06</span> Analytics</h2>
-          <p>No analytics service is built into this site by default. If an analytics tool is added in the future, it will be named here rather than assumed: <span class="placeholder">[ANALYTICS SERVICE]</span>.</p>
+          <p>No analytics service is built into this site.</p>
         </section>
 
         <section id="third-party-services">
           <h2><span class="legal-num">07</span> Third-Party Services</h2>
-          <p>WebsterWebDevelopments may use third-party tools to operate this website or deliver services (for example, hosting, email, or form-processing providers). Any specific third-party service in use will be listed here: <span class="placeholder">[THIRD-PARTY SERVICES]</span>. Each provider's own privacy policy governs how they handle information.</p>
+          <p>WebsterWebDevelopments may use third-party tools to operate this website or deliver services (for example, hosting, email, or form-processing providers).</p>
         </section>
 
         <section id="data-retention">
@@ -2033,7 +2028,7 @@ p {
 
         <section id="your-rights">
           <h2><span class="legal-num">10</span> Your Rights</h2>
-          <p>Depending on where you're located, you may have rights regarding your personal information, such as requesting access to, correction of, or deletion of information you've provided. To exercise these rights, contact us using the information below. This section should be reviewed against the specific privacy laws that apply in <span class="placeholder">[JURISDICTION]</span>.</p>
+          <p>Depending on where you're located, you may have rights regarding your personal information, such as requesting access to, correction of, or deletion of information you've provided. To exercise these rights, contact us using the information below.</p>
         </section>
 
         <section id="childrens-privacy">
@@ -2050,8 +2045,9 @@ p {
           <h2><span class="legal-num">13</span> Contact Information</h2>
           <p>Questions about this Privacy Policy can be directed to:</p>
           <ul>
-            <li>Email: <span class="placeholder">[BUSINESS EMAIL]</span></li>
-            <li>Address: <span class="placeholder">[BUSINESS ADDRESS]</span></li>
+            <li>Email: <span class="placeholder">websterwebdevelopments@gmail.com</span></li>
+            <li>Phone: <span class="placeholder">+971 58 577 2069</span></li>
+            <li>Based In: <span class="placeholder">United Arab Emirates</span></li>
           </ul>
         </section>
       </div>
@@ -2087,7 +2083,7 @@ p {
           <div class="footer__heading">Get In Touch</div>
           <div class="footer__list">
             <a href="index.html#contact">Contact Us</a>
-            <a href="terms.html">Terms of Service</a>
+            <a href="terms.html">Terms & Conditions</a>
             <a href="privacy.html">Privacy Policy</a>
           </div>
         </div>
@@ -2096,7 +2092,7 @@ p {
       <div class="footer__bottom">
         <p>&copy; <span data-current-year>2026</span> WebsterWebDevelopments. All rights reserved.</p>
         <div class="footer__bottom-links">
-          <a href="terms.html">Terms of Service</a>
+          <a href="terms.html">Terms & Conditions</a>
           <a href="privacy.html">Privacy Policy</a>
         </div>
       </div>
@@ -2310,15 +2306,6 @@ function initContactForm() {
 
     if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
       showStatus("Please fill in your name, email, and message before sending.", "error");
-      return;
-    }
-
-    var placeholderPattern = /^\[*\]$/;
-    if (placeholderPattern.test(STUDIO_EMAIL)) {
-      showStatus(
-        "This form is a front-end demonstration. Connect it to a real inbox or form service (and replace the [BUSINESS EMAIL] placeholder inside the <script> block near the bottom of this file) before using it publicly.",
-        "error"
-      );
       return;
     }
 

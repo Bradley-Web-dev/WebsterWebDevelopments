@@ -1938,7 +1938,7 @@ p {
       <div class="legal-content">
         <section id="Definitions">
           <h2><span class="legal-num">01</span> Definitions</h2>
-          <p>These Terms of Service ("Terms") govern the website design and development services provided by WebsterWebDevelopments "We / Us / Our" = The company. "Client / You / Your / their" = The customer. "Website" = The client’s website we are creating. "Services" = design, development, and maintenance. By requesting a quote, signing a project agreement, or otherwise engaging WebsterWebDevelopments, the Client agrees to be bound by these Terms.</p>
+          <p>These Terms & Conditions ("Terms") govern the website design and development services provided by WebsterWebDevelopments "We / Us / Our" = The company. "Client / You / Your / their" = The customer. "Website" = The client’s website we are creating. "Services" = design, development, and maintenance. By requesting a quote, signing a project agreement, or otherwise engaging WebsterWebDevelopments, the Client agrees to be bound by these Terms.</p>
         </section>
 
         <section id="Services">
@@ -2314,15 +2314,6 @@ function initContactForm() {
 
     if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
       showStatus("Please fill in your name, email, and message before sending.", "error");
-      return;
-    }
-
-    var placeholderPattern = /^\[$/;
-    if (placeholderPattern.test(STUDIO_EMAIL)) {
-      showStatus(
-        "This form is a front-end demonstration. Connect it to a real inbox or form service (and replace the [BUSINESS EMAIL] placeholder inside the <script> block near the bottom of this file) before using it publicly.",
-        "error"
-      );
       return;
     }
 
