@@ -1114,10 +1114,17 @@ p {
   font-size: var(--fs-xs);
   font-weight: 600;
   color: var(--color-text-faint);
-  cursor: not-allowed;
+  cursor: pointer;
   border: 1px solid var(--color-border);
   padding: var(--space-2) var(--space-4);
   border-radius: var(--radius-pill);
+  transition: border-color 160ms, color 160ms;
+}
+
+.portfolio-card__btn:hover,
+.portfolio-card__btn:focus-visible {
+  border-color: var(--color-accent-line);
+  color: var(--color-accent);
 }
 
 .portfolio__note {
@@ -2229,7 +2236,7 @@ p {
               <span class="portfolio-card__type">Example Project</span>
               <h3 class="portfolio-card__title">Cleaning Company Website</h3>
               <p class="portfolio-card__desc">A simple, approachable concept for a cleaning business.</p>
-              <a class="portfolio-card__btn" href="#contact">View Project</a>
+              <a class="portfolio-card__btn" href="https://bradley-web-dev.github.io/The-Cleaning-Company-HTX-Website/">View Project</a>
             </div>
           </article>
         </div>
